@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student in the Department of Industrial Engineering and Operations Research at Columbia University in the City of New York advised by Professor Agostino Capponi. My research interests are broadly in game theory, decentralized finance, and operations management. I am currently studying applications of blockchain in supply chain management. Previously, I obtained a B.S. in Economics and Mathematics from Yale University, where Professor Xiaohong Chen advised me on my senior thesis.
+I am a first-year Ph.D. student in the Department of Industrial Engineering and Operations Research at Columbia University in the City of New York, where I am advised by Professor Agostino Capponi. My research interests are broadly in game theory, decentralized finance, and operations management. I am currently studying applications of blockchain in supply chain management. Previously, I obtained a B.S. in Economics and Mathematics from Yale University, where I was advised by Professor Xiaohong Chen advised on my senior thesis.
 
 I can be reached at bzz2101@columbia.edu.
 
