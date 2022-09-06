@@ -1,6 +1,6 @@
 ---
 title: "Unsupervised machine learning reveals slab hydration variations from deep earthquake
-distributions beneath the northwest Pacific."
+distributions beneath the northwest Pacific"
 collection: publications
 permalink: https://www.nature.com/articles/s43247-022-00377-x
 excerpt: 
