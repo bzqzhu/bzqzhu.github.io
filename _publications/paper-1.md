@@ -2,7 +2,7 @@
 title: "Unsupervised machine learning reveals slab hydration variations from deep earthquake
 distributions beneath the northwest Pacific"
 collection: publications
-permalink: 
+permalink: /unsupervised-machine-learning-reveals-slab-hydration-variations-from-deep-earthquake-distributions-beneath-the-northwest-Pacific
 excerpt: 
 date: 2022-03-10
 venue: 'Communications Earth & Environment'
