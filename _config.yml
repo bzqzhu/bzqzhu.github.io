@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Brian Zhu"
   avatar           : "profile.PNG"
-  bio              : "Ph.D. Candidate at Columbia IEOR"
+  bio              : "Ph.D. Candidate <br> Columbia IEOR"
   location         : "New York"
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            : "bzz2101@columbia.edu"
+  email            : 
   researchgate     :  
   uri              :
   bitbucket        :
