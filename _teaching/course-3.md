@@ -5,7 +5,7 @@ type: "Mixed undegraduate and graduate course"
 permalink: /teaching/stochastic-processes
 excerpt: Held office hours, graded problem sets, and wrote exam questions.
 venue: "Yale University"
-date: 2021-01-01
+date: 2022-01-01
 location: 
 
 ---
