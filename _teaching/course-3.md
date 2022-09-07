@@ -9,4 +9,3 @@ date: 2022-01-01
 location: 
 
 ---
-Held office hours, graded problem sets, and wrote exam questions.
