@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student in the Department of Industrial Engineering and Operations Research at Columbia University in the City of New York, where I am advised by Professor Agostino Capponi. My research interests include decentralized market design and financial technology. Previously, I obtained a B.S. in Economics and Mathematics from Yale University, where I was advised on my senior thesis by Professor Xiaohong Chen.
+I am a first-year Ph.D. student in the Department of Industrial Engineering and Operations Research at Columbia University in the City of New York, where I am advised by Professor Agostino Capponi. My research interests include decentralized market design and online platforms. Previously, I obtained a B.S. in Economics and Mathematics from Yale University, where I was advised on my senior thesis by Professor Xiaohong Chen.
 
 Email: bzz2101@columbia.edu
 
