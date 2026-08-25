@@ -149,7 +149,7 @@ section {
   gap: clamp(3rem, 7vw, 7rem);
   align-items: center;
   margin: 0 auto;
-  padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+  padding: clamp(3rem, 6vw, 5rem) 1.5rem;
 }
 
 .portrait-column {
@@ -182,7 +182,7 @@ section {
   gap: 0.25rem;
   margin-top: 1rem;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
 }
 
 .profile-contact a {
@@ -204,7 +204,7 @@ section {
   color: var(--navy);
   font-family: var(--serif);
   font-size: clamp(3.2rem, 6vw, 5.4rem);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 1;
 }
@@ -322,7 +322,7 @@ section {
 .content-layout {
   max-width: 1150px;
   margin: 0 auto;
-  padding: clamp(4rem, 8vw, 7rem) 1.5rem clamp(5rem, 10vw, 9rem);
+  padding: clamp(3rem, 6vw, 5rem) 1.5rem clamp(4rem, 7vw, 6rem);
 }
 
 .main-content {
@@ -330,7 +330,7 @@ section {
 }
 
 .content-section + .content-section {
-  margin-top: clamp(3.5rem, 6vw, 5rem);
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 .section-header {
@@ -565,7 +565,7 @@ section {
 
 .publication-group-list {
   display: grid;
-  gap: 1.25rem;
+  gap: 0.9rem;
 }
 
 .publication-group-header {
@@ -702,12 +702,120 @@ section {
   order: 1;
 }
 
+.publication-section .publication {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: var(--white);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.publication-section .publication:hover,
+.publication-section .publication:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(24, 50, 75, 0.1);
+  transform: translateY(-2px);
+}
+
+.publication-section .publication:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.publication-section .publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 0.4rem 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+  order: 2;
+}
+
+.publication-section .publication h3 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.publication-section .publication p {
+  max-width: none;
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.publication-section .publication .authors {
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+.publication-section .publication p:not(.authors) {
+  font-weight: 400;
+}
+
+.publication-section .publication > div:not(.publication-meta) {
+  order: 1;
+}
+
+.publication-section .publication h3 + .authors,
+.other-publications .publication h3 + .authors {
+  margin-top: 0.15rem;
+}
+
+.publication-section .publication .authors + p,
+.other-publications .publication .authors + p {
+  margin-top: 0.3rem;
+}
+
+.publication-meta > .related-resource {
+  align-self: baseline;
+  text-transform: none;
+  letter-spacing: normal;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.5rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.publication-meta > .related-resource:hover,
+.publication-meta > .related-resource:focus-visible {
+  background: var(--accent);
+  color: var(--white);
+}
+
 .other-publications {
   margin-top: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .other-publications .publication-group-header {
   margin-bottom: 1.25rem;
+}
+
+.publication-section .section-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 2px solid var(--navy);
+}
+
+.publication-section .section-header h2 {
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 600;
+}
+
+.content-section.other-publications {
+  margin-top: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 .site-footer {
