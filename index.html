@@ -21,8 +21,8 @@
 
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
+          <a href="#conference-publications">Research</a>
+          <!-- <a href="#working-papers">Publications</a> -->
           <a href="CV_BZ.pdf">CV</a>
         </nav>
       </div>
@@ -51,16 +51,16 @@
               <h2>About Me</h2>
               <div class="about-copy">
                 <p class="lead">I am a fifth-year Ph.D. candidate in Operations Research at Columbia University, advised by Professor Agostino Capponi.</p>
-                <p>I study how market microstructure, decentralized finance, and financial technology intersect, with current interests focusing on prediction markets, tokenization, and financial applications of agentic AI</b>. </p>
-                <p>My research has been presented and published at top conferences in finance, economics, and computer science. I have also collaborated with leading industry research teams on market analysis of stablecoins and decentralized exchange design.</p>
+                <p>I study how market microstructure, decentralized finance, and financial technology intersect, with current interests focusing on prediction markets, tokenization, and agentic AI for financial decision-making.</p>
+                <p>My research has been presented and published at top conferences in finance, economics, and computer science.<br>I have also collaborated with leading industry research teams on market analysis of stablecoins and decentralized exchange design.</p>
               </div>
             </section>
 
             <div class="hero-links">
-              <a class="primary-link" href="#research">Selected Research</a>
-              <a class="primary-link" href="#research">Publications and Working Papers</a>
-              <a href="CV_BZ.pdf">Curriculum Vitæ</span></a>
-              <!-- <a href="mailto:bzz2101@columbia.edu">Email</a> -->
+              <a href="#conference-publications">Conference Proceedings</a>
+              <a href="#working-papers">Working Papers</a>
+              <a href="#other-publications">Other Publications</a>
+              <a class="primary-link" href="CV_BZ.pdf">Curriculum Vitæ</a>
             </div>
 
             <!-- <dl class="research-keywords">
@@ -73,7 +73,7 @@
 
       <div class="content-layout">
         <div class="main-content">
-          <section class="content-section" id="research">
+          <!-- <section class="content-section" id="research">
             <header class="section-header">
               <h2>Selected Research</h2>
             </header>
@@ -100,14 +100,11 @@
                 <div class="publication-meta"><strong>Working Paper</strong></div>
               </a>
             </div>
-          </section>
+          </section> -->
 
-          <section class="content-section" id="publications">
-            <header class="section-header publications-heading">
-              <div>
-                <h2>Publications and Working Papers</h2>
-              </div>
-              <!-- <a href="CV_BZ.pdf">Full CV →</a> -->
+          <section class="content-section publication-section" id="conference-publications">
+            <header class="section-header">
+              <h2>Conference Proceedings</h2>
             </header>
 
             <!--
@@ -121,19 +118,31 @@
             </section>
             -->
 
-            <div class="publication-columns">
-              <section class="publication-group" aria-labelledby="conference-heading">
-                <header class="publication-group-header">
-                  <h3 id="conference-heading">Conference Publications</h3>
-                </header>
+            <div class="publication-group-list">
+                  <a class="publication" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6240079" target="_blank" rel="noopener noreferrer">
+                    <div class="publication-meta"><span>Economics and Computation 2026 (Accepted)</span><strong>Working Paper</strong></div>
+                    <div>
+                      <h3>Auctioning Time to Mitigate Latency Races: Theory and Evidence from Blockchains</h3>
+                      <p class="authors">with A. Capponi</p>
+                      <p>Latency competition in blockchains results in transaction spamming. Auctions for artificial time priority reduces this spam and raise platform revenue. We verify these results using data from Arbitrum’s Timeboost launch as a natural experiment.</p>
+                    </div>
+                  </a>
 
-                <div class="publication-group-list">
+                  <a class="publication" href="https://arxiv.org/abs/2607.17428" target="_blank" rel="noopener noreferrer">
+                    <div class="publication-meta"><span>Advances in Financial Technologies 2026 (Accepted)</span><strong>Working Paper</strong></div>
+                    <div>
+                      <h3>Uniform-Loss Automated Market Making for Prediction Markets</h3>
+                      <p class="authors">with C. Moallemi and D. Robinson</p>
+                      <p>Prices in prediction markets converge to 0 or 1 by a fixed time, resulting in large arbitrage losses to liquidity providers under typical AMM settings. Proper design of AMM invariants and dynamic liquidity schedules can smooth this loss across both price and time.</p>
+                    </div>
+                  </a>
+
                   <a class="publication" href="https://arxiv.org/abs/2410.19106" target="_blank" rel="noopener noreferrer">
                     <div class="publication-meta"><span>Financial Cryptography 2025</span></div>
                     <div>
                       <h3>Quantifying the Value of Revert Protection</h3>
                       <p class="authors">with B. Bachu, C. Moallemi, D. Robinson, and X. Wan</p>
-                      <p>Revert protection eliminates gas fees paid for failed transactions. On blockchains using priority gas auctions, this improves auction revenue, price discovery, and blockspace efficiency.</p>
+                      <p>Revert protection waives gas fees for failed transactions. On blockchains using priority gas auctions, this improves auction revenue, price discovery, and blockspace efficiency.</p>
                     </div>
                   </a>
 
@@ -148,68 +157,81 @@
                 </div>
               </section>
 
-              <section class="publication-group" aria-labelledby="working-heading">
-                <header class="publication-group-header">
-                  <h3 id="working-heading">Working Papers</h3>
-                </header>
+          <section class="content-section publication-section" id="working-papers">
+            <header class="section-header">
+              <h2>Working Papers</h2>
+            </header>
 
-                <div class="publication-group-list">
+            <div class="publication-group-list">
+
+                  <a class="publication" href="https://arxiv.org/abs/2512.02436" target="_blank" rel="noopener noreferrer">
+                    <div class="publication-meta"><strong>Working Paper</strong></div>
+                    <div>
+                      <h3>Agentic AI for Clustering, Relationship Discovery, and Semantic Trading in Prediction Markets</h3>
+                      <p class="authors">with A. Capponi and A. Gliozzo</p>
+                      <p>We build an agentic AI pipeline that clusters prediction markets and identifies correlated or contradictory markets based on the their textual characteristics, then construct semantic-based trading strategies from AI-identified relations.</p>
+                    </div>
+                  </a>
 
                   <article class="publication">
-                    <div class="publication-meta"><span>Global Risk Institute (Featured)</span><strong>Working Paper</strong></div>
+                    <div class="publication-meta"><span>Global Risk Institute (Featured)</span><strong>Working Paper</strong><a class="related-resource" href="PEPS.pdf" download>Read the Global Risk Institute's Executive Summary</a></div>
                     <div>
                       <h3>Privacy-Enhanced Payment Systems</h3>
                       <p class="authors">with A. Capponi and M. Lee</p>
-                      <p>We develop a framework for defining and evaluating privacy enhancements in payment systems, then use it to design systems that balance legitimate privacy benefits against illicit activity, and to compare existing systems.</p>
-                      <p class="related-resource"><a href="PEPS.pdf" download>Read the Global Risk Institute's Executive Summary</a></p>
+                      <p>We develop a framework for defining and evaluating privacy enhancements in payment systems, then use it to design systems balancing legitimate privacy benefits against illicit activity, and to compare existing systems.</p>
                     </div>
                     <a class="paper-card-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5136803" target="_blank" rel="noopener noreferrer" aria-label="Open Privacy-Enhanced Payment Systems on SSRN"></a>
                   </article>
-                  
+
                   <article class="publication">
-                    <div class="publication-meta"><strong>Under Review at Management Science</strong></div>
+                    <div class="publication-meta"><strong>Under Review at Management Science</strong><a class="related-resource" href="https://avalanchepolicy.com/en/podcast/ava-labs-x-cber-ep-3-just-in-time-liquidity-at-decentralized-exchanges/" target="_blank" rel="noopener noreferrer">Listen to the Ava Labs Podcast</a></div>
                     <div>
                       <h3>The Paradox of Just-in-Time Liquidity in Decentralized Exchanges</h3>
                       <p class="authors">with A. Capponi and R. Jia</p>
                       <p>Passive market makers benefit from active market makers in DEXs due to the pro-rata sharing of trading fees, but can get crowded out when trading volume is insufficiently responsive to liquidity, worsening market quality.</p>
-                      <p class="related-resource"><a href="https://avalanchepolicy.com/en/podcast/ava-labs-x-cber-ep-3-just-in-time-liquidity-at-decentralized-exchanges/" target="_blank" rel="noopener noreferrer">Listen to the Ava Labs Podcast</a></p>
                     </div>
                     <a class="paper-card-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4648055" target="_blank" rel="noopener noreferrer" aria-label="Open The Paradox of Just-in-Time Liquidity in Decentralized Exchanges on SSRN"></a>
                   </article>
 
                   <article class="publication">
-                    <div class="publication-meta"><strong>Under Revision at Operations Research</strong></div>
+                    <div class="publication-meta"><strong>Under Revision at Operations Research</strong><a class="related-resource" href="https://www.bloomberg.com/professional/insights/webinar/bloomberg-quant-bbq-seminar-march-2025/" target="_blank" rel="noopener noreferrer">Watch the Bloomberg Quant Seminar</a></div>
                     <div>
                       <h3>From Pools to Books: A Microstructure Mapping of DeFi Liquidity</h3>
                       <p class="authors">with A. Capponi</p>
-                      <p>Liquidity pool states in AMMs can be represented as order books, allowing for optimal execution and liquidity allocation problems in AMM to be analyzed from an order book perspective.</p>
-                      <p class="related-resource"><a href="https://www.bloomberg.com/professional/insights/webinar/bloomberg-quant-bbq-seminar-march-2025/" target="_blank" rel="noopener noreferrer">Watch the Bloomberg Quant Seminar</a></p>
+                      <p>Liquidity pool states in AMMs can be represented as order books, allowing for optimal execution and liquidity allocation in AMMs to be analyzed via order book perspectives.</p>
                     </div>
                     <a class="paper-card-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6579381" target="_blank" rel="noopener noreferrer" aria-label="Open From Pools to Books: A Microstructure Mapping of DeFi Liquidity on SSRN"></a>
                   </article>
 
-                  
-                  
-                </div>
-              </section>
-            </div>
 
-            <section class="other-publications" aria-labelledby="other-heading">
-              <header class="publication-group-header">
-                <h3 id="other-heading">Other Publications</h3>
-              </header>
+
+                </div>
+          </section>
+
+          <section class="content-section publication-section other-publications" id="other-publications">
+            <header class="section-header">
+              <h2>Other Publications</h2>
+            </header>
               <div class="publication-group-list">
                 <a class="publication" href="https://globalriskinstitute.org/publication/tokenizing-real-world-assets-what-changes-what-does-not-and-where-policy-stands/" target="_blank" rel="noopener noreferrer">
-                  <div class="publication-meta"><span>Global Risk Institute</span><strong></strong></div>
+                  <div class="publication-meta"><span>Global Risk Institute</span><strong>Report</strong></div>
                   <div>
                     <h3>Tokenizing Real-World Assets: What Changes, What Does Not, and Where Policy Stands</h3>
                     <p class="authors">with A. Capponi</p>
                     <p>We examine the technological, legal, and regulatory implications of tokenizing real-world assets.</p>
                   </div>
                 </a>
+
+                <a class="publication" href="https://www.nature.com/articles/s43247-022-00377-x" target="_blank" rel="noopener noreferrer">
+                  <div class="publication-meta"><span>Communications Earth & Environment</span><strong>Volume 3, Article 56 (2022)</strong></div>
+                  <div>
+                    <h3>Unsupervised machine learning reveals slab hydration variations from deep earthquake distributions beneath the northwest Pacific</h3>
+                    <p class="authors">with G. Mao, T. Ferrand, J. Li, Z. Xi, and M. Chen</p>
+                    <p> Water trapped inside sinking tectonic plates can trigger earthquakes deep below Earth’s surface. Using unsupervised learning, we isolate a thin zone where pressurized water transforms and fractures minerals, offering clues to the mystery of how earthquakes can still occur under intense pressures where ordinary rock should not break.</p>
+                  </div>
+                </a>
               </div>
             </section>
-          </section>
         </div>
       </div>
     </main>
